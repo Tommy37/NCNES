@@ -1,0 +1,7 @@
+problem = 6;
+D = 7;
+[o, A, M, a, alpha, b, lu] = DataLoading(problem, D);
+
+cov = lu(:, 1);
+1./((cov+cov)./2)
+%temp1 = 1./(cov+cov)./2
